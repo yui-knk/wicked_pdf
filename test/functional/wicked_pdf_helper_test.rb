@@ -19,7 +19,7 @@ class WickedPdfHelperTest < ActionView::TestCase
     end
   end
 
-  test 'wicked_pdf_include_tag should return many wicked_pdf_javascript_src_tags' do
+  test 'wicked_pdf_javascript_include_tag should return many wicked_pdf_javascript_src_tags' do
     assert_equal [wicked_pdf_javascript_src_tag('foo'), wicked_pdf_javascript_src_tag('bar')].join("\n"),
                  wicked_pdf_javascript_include_tag('foo', 'bar')
   end
