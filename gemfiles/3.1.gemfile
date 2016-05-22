@@ -4,5 +4,12 @@ gem 'rdoc'
 gem 'rails', '~> 3.1.0'
 gem 'sqlite3'
 gem 'i18n', '~> 0.6.0'
+
+if RUBY_VERSION >= '1.9.3'
+  gem 'rake'
+else
+  gem 'rake', '~> 10'
+end
+
 gem 'wicked_pdf', path: '../'
 gemspec path: '../'
