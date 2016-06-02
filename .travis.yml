@@ -3,6 +3,8 @@ language:
 before_install:
   - sudo apt-get update -qq
   - gem update bundler
+  - bundle lock
+  - cat "$BUNDLE_GEMFILE.lock"
 bundler_args: --verbose
 sudo: required
 rvm:
